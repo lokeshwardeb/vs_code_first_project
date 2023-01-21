@@ -1,0 +1,24 @@
+:root{
+    --primary-color:#D9D9D9;
+    --secondary-color:#000C18;
+}
+.custom-navbar-bg{
+    background-color: var(--primary-color);
+}
+
+
+.hero-area-canvas-bg{
+    background-color: var(--primary-color);
+}
+.hero-text{
+    margin-top: 30px;
+    margin-left: 100px;
+    color: var(--secondary-color);
+}
+
+.big-font-weight{
+    font-weight: 500 !important;
+}
+.xx-large-font{
+    font-size: xx-large;
+}

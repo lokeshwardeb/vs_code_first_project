@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-area{
+    height: 80vh;
+}
+.f-products-section{
+    height: 100vh;
+}
