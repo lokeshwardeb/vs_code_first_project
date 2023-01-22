@@ -10,16 +10,46 @@ var increButton = document.getElementsByClassName('inc');
                       // console.log(input);
                       var inputValue = input.value;
                       // console.log(inputValue);
-                      if(inputValue<10){
+                      
+                      if(inputValue == ''){
+                        var newValue = parseInt('0')+1;
+                        input.value = newValue;
+                          
+                      }
+                      else if(inputValue < 10){
                         var newValue = parseInt(inputValue)+1;
                         console.log(newValue);
-                        input.value = newValue
+                     var finalValue = input.value = Math.abs(newValue);
+
                       }
-                      if(inputValue<0){
-                        var newValue = parseInt(inputValue);
-                        console.log(newValue);
-                        input.value = 0;
+                      else if(inputValue >= 10){
+                        input.value = 10;
                       }
+                  
+                      else if(inputValue == 10){
+                        input.value = 10;
+                        // input.setattribute("disabled");
+
+                      }
+                  
+
+                     
+                      // else{
+                      //   alert('this is a alert for the zero');
+                      // }
+                      
+                      //   if(inputValue<0){
+                      //   var newValue = parseInt(inputValue);
+                      //   console.log(newValue);
+                      //   input.value = 0;
+                      // }
+                    
+                      // }
+                      // if(inputValue<0){
+                      //   var newValue = parseInt(inputValue);
+                      //   console.log(newValue);
+                      //   input.value = 0;
+                      // }
                     
                   })
                   
@@ -37,6 +67,27 @@ var increButton = document.getElementsByClassName('inc');
                       var newValue = parseInt(inputValue) - 1;
                       console.log(newValue);
                       input.value = newValue
+
+                      var finalValue = input.value = Math.abs(newValue);
+  
+
+                      if(finalValue < 0){
+                        input.value = 0;
+                          
+                      }
+                      else if(finalValue == 0){
+                        input.value = 0;
+                      }
+                      else if(finalValue == -1){
+                        input.value = 0;
+                      }
+                      else if(inputValue >= 10){
+                        input.value = 10-1;
+                      }
+                  
+                      else if(inputValue == 10){
+                        input.value = 10-1;
+                      }
                   })
                   
               }

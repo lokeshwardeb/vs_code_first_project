@@ -22,3 +22,6 @@
 .xx-large-font{
     font-size: xx-large;
 }
+.cart-button{
+    color: var(--secondary-color);
+}
