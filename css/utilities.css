@@ -25,3 +25,25 @@
 .cart-button{
     color: var(--secondary-color);
 }
+/* .newsletter-section{
+    background-color: var(--primary-color);
+    height: 20vh;
+} */
+.newsletter-section {
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    
+    /* margin-top: 200vh; */
+}
+.footer-section{
+    background-color: var(--secondary-color);
+    height: auto;
+}
+.nav-link-footer:hover{
+    color: var(--primary-color);
+}
+.social-links img{
+    width: 100px !important;
+}

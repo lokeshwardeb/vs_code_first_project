@@ -72,14 +72,14 @@ var increButton = document.getElementsByClassName('inc');
   
 
                       if(finalValue < 0){
-                        input.value = 0;
+                        input.value = 1;
                           
                       }
                       else if(finalValue == 0){
-                        input.value = 0;
+                        input.value = 1;
                       }
                       else if(finalValue == -1){
-                        input.value = 0;
+                        input.value = 1;
                       }
                       else if(inputValue >= 10){
                         input.value = 10-1;
