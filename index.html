@@ -41,7 +41,7 @@
                 <a class="nav-link text-center active m-auto me-4" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link m-auto me-4" href="#">About Us</a>
+                <a class="nav-link m-auto me-4" href="about-us.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link m-auto me-4" href="#">Shop</a>
@@ -58,11 +58,21 @@
               <li class="nav-item">
                 <a class="nav-link m-auto me-4" href="#">Contract Us</a>
               </li>
-              <form class="d-flex" role="search">
 
+              <!-- checkout button model starts here -->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-dark me-4 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                carts
+              </button>
+              <!-- checkout button model ends here -->
+              
+              <!-- buy now button in navbar starts here -->
+              <form class="d-flex" role="search">
+                
                 <button class="btn btn-dark" type="submit">Buy now</button>
               </form>
-
+              <!-- buy now button in navbar ends here -->
+              
           </div>
         </div>
       </nav>
@@ -117,33 +127,37 @@
       <div class="f-products-section">
         <div class="row  cus-d-block">
           <div class="col-4 products-col mb-4">
-            <a href="" class="nav-link">
-              <div class="p-img">
-                <img src="img/benjamin-rascoe-WdhmRPvMn7A-unsplash 1.png" alt="" srcset="">
+            <div class="product-info">
+              <a href="" class="nav-link">
+                <div class="p-img">
+                  <img src="img/benjamin-rascoe-WdhmRPvMn7A-unsplash 1.png" alt="" srcset="">
+                </div>
+                <div class="p-title mt-2 mb-3 ms-4" name="product-name" id="pro-name">
+                  Black modern t-shirt
+                </div>
+              </a>
+              <div class="box ms-2 ps-5 d-flex">
+                <label for="name"></label>
+                <button class="dec button pe-4 btn">-</button>
+                <input type="text" name="qty" id="1" value="1" class="numInp" disabled>
+                <button class="inc button ps-4 btn">+</button>
               </div>
-              <div class="p-title mt-2 mb-3 ms-4">
-                Black modern t-shirt
-              </div>
-            </a>
-            <div class="box ms-2 ps-5 d-flex">
-              <label for="name"></label>
-              <button class="dec button pe-4 btn">-</button>
-              <input type="text" name="qty" id="1" value="1" class="numInp" disabled>
-              <button class="inc button ps-4 btn">+</button>
+              <div class="price d-inline-flex">
+                <div class="price_symbol">$</div>
+                <div class="price_amount" name = "product-price">40</div>
+              </div><br>
+            
+  
             </div>
-            <div class="price d-inline-flex">
-              <div class="price_symbol">$</div>
-              <div class="price_amount">40</div>
-            </div><br>
             <div class="price-button d-inline-flex mt-4">
               <div class="cart-button me-4 ">
-                <button type="submit" class="btn btn-outline-dark btn-sm-md">Add to cart</button>
+                <button type="submit" class="btn btn-outline-dark btn-sm-md" onclick="cart()">Add to cart</button>
               </div>
               <div class="buy-button">
                 <button type="submit" class="btn btn-dark btn-md-sm">Buy now</button>
               </div>
             </div>
-
+     
 
 
 
@@ -470,6 +484,30 @@
         <!-- banner slider section ends here -->
 
 
+        <!-- cart model starts here -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Cart Items</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cart model ends here -->
+
+
   </main>
   <!-- the main content ends here -->
 
@@ -599,8 +637,8 @@
 
   </script> -->
 
-  <!-- <script src="js/script.js"></script> -->
-  <!-- <script src="js/"></script> -->
+  <script src="js/script.js"></script> -->
+  <!-- <script src="js/"></script>
 </body>
 
 </html>

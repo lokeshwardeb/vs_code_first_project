@@ -91,3 +91,59 @@ var increButton = document.getElementsByClassName('inc');
                   })
                   
               }
+
+
+
+
+
+
+
+              // let productInformation = document.querySelector(".product-info");
+              // let allInfo = productInformation.innerHTML
+
+              // console.log(allInfo)
+
+
+              function cart() {
+               let productName = document.getElementsByName("product-name");
+              let productValues =  productName.values;
+
+            for (let i = 0; i < productName.length; i++) {
+                // const element = array[i];
+                let productnum = productName[i];
+               console.log(productnum)
+              }
+
+              let productInfo = document.querySelector(".product-info");
+              let productPrice = document.getElementsByName("product-price");
+
+              // console.log("inner text is", productInfo.innerHTML)
+              
+            for (let i = 0; i < productPrice.length; i++) {
+                // const element = array[i];
+                let productPricenum = productPrice[i];
+               console.log(productPricenum)
+              }
+
+
+
+              // let productInfo = document.querySelector(".product-info");
+              let productQty = document.getElementsByName("qty");
+
+              // console.log("inner text is", productInfo.innerHTML)
+              
+            for (let i = 0; i < productQty.length; i++) {
+                // const element = array[i];
+                addEventListene
+                r("click", (e)={
+                  
+                })
+                let productQtyenum = productQty[i];
+               console.log(productQtyenum)
+              }
+              
+
+              //  console.log(productName[0]);
+              //  console.log(productValues);
+
+              }
